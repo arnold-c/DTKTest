@@ -1,0 +1,7 @@
+data_config_version = 0
+uuid = "c9ef0980-87b6-458f-af80-c5e0b28a54ed"
+name = "DTKTest"
+plugins = ["store", "defaults", "memorise"]
+
+[config.defaults.storage._]
+checksum = "auto"

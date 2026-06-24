@@ -1,7 +1,7 @@
 name = "DTKTest"
 uuid = "2099ecbe-5895-4cee-b164-97cc5d12eac0"
-authors = ["arnold-c <24391445+arnold-c@users.noreply.github.com>"]
 version = "0.1.0"
+authors = ["arnold-c <24391445+arnold-c@users.noreply.github.com>"]
 
 [deps]
 DataToolkit = "dc83c90b-d41d-4e55-bdb7-0fc919659999"
@@ -11,19 +11,36 @@ DataToolkitCore = "caac3e55-418c-402e-a061-64d454aa8f4f"
 DataToolkitREPL = "c58528a0-97a2-40a0-9a44-056fe1196995"
 DataToolkitStore = "082ec3c2-3fb3-458f-ad22-5e5e31d4377a"
 
-[sources]
-DataToolkit = {url = "https://github.com/tecosaur/DataToolkit.jl.git", subdir="Main"}
-DataToolkitBase = {url = "https://github.com/tecosaur/DataToolkit.jl.git", subdir="Base"}
-DataToolkitCommon = {url = "https://github.com/tecosaur/DataToolkit.jl.git", subdir="Common"}
-DataToolkitCore = {url = "https://github.com/tecosaur/DataToolkit.jl.git", subdir="Core"}
-DataToolkitREPL = {url = "https://github.com/tecosaur/DataToolkit.jl.git", subdir="REPL"}
-DataToolkitStore = {url = "https://github.com/tecosaur/DataToolkit.jl.git", subdir="Store"}
+[sources.DataToolkit]
+subdir = "Main"
+url = "https://github.com/tecosaur/DataToolkit.jl.git"
+
+[sources.DataToolkitBase]
+subdir = "Base"
+url = "https://github.com/tecosaur/DataToolkit.jl.git"
+
+[sources.DataToolkitCommon]
+subdir = "Common"
+url = "https://github.com/tecosaur/DataToolkit.jl.git"
+
+[sources.DataToolkitCore]
+subdir = "Core"
+url = "https://github.com/tecosaur/DataToolkit.jl.git"
+
+[sources.DataToolkitREPL]
+subdir = "REPL"
+url = "https://github.com/tecosaur/DataToolkit.jl.git"
+
+[sources.DataToolkitStore]
+subdir = "Store"
+url = "https://github.com/tecosaur/DataToolkit.jl.git"
+
+[compat]
+DataToolkit = "0.9"
+julia = "1"
 
 [extras]
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
 
 [targets]
 test = ["Test"]
-
-[compat]
-julia = "1"
